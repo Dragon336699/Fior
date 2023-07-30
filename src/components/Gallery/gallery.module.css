@@ -1,0 +1,39 @@
+.gallery_container {
+    padding: 75px 0;
+    position: relative;
+}
+
+.gallery_imgBox {
+    margin-top: 44px;
+}
+
+.gallery_img_container {
+    overflow: hidden;
+    margin: 8px 0;
+}
+
+.gallery_heading {
+    margin-bottom: 8px;
+    text-align: center;
+    position: relative;
+    width: fit-content;
+    font-weight: 800;
+}
+
+.gallery_heading::before {
+   content: url(https://html.design/demo/fior/images/tulip.png);
+   position: absolute;
+   left:-24px;
+   top: 50%;
+   transform: translateY(-50%);
+}
+
+.gallery_img {
+    overflow: hidden;
+    width: 100%;
+    transition: all .3s ;
+}
+
+.gallery_img:hover {
+    transform: scale(1.2);
+}

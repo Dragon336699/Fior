@@ -4,10 +4,10 @@ function Header() {
     return (
         <Container className= {styles.header}>
             <Row className='justify-content-center'>
-                <Col className= {styles.header_brand} md= 'auto' lg = '2' xl = '2'>
+                <Col className= {styles.header_brand} md= '1' lg = '1' xl = '1'>
                     <span>Fior</span>
                 </Col>
-                <Col className={`${styles.header_nav} `} md= 'auto' lg = '4' xl = '4'>
+                <Col className={`${styles.header_nav} `} md= '6' lg = '6' xl = '6'>
                     <ul className={`${styles.header_nav_list} d-flex w-100`}>
                         <li lg = '4' className={`${styles.header_nav_item} `}>
                             <a className={`${styles.header_nav_link}`} href='/'>Home</a>
@@ -23,7 +23,7 @@ function Header() {
                         </li>
                     </ul>
                 </Col>
-                <Col className={`${styles.header_user}`} md= 'auto' lg = '2' xl = '2'>
+                <Col className={`${styles.header_user}`} md= '2' lg = '2' xl = '2'>
                     <ul className={`${styles.header_user_list} d-flex`}>
                         <li className={`${styles.header_user_item}`}>Log in</li>
                         <li className={`${styles.header_user_item}`}>

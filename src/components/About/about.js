@@ -4,8 +4,6 @@ function About() {
     return (
         <Container fluid className={`${styles.about_section}`}>
             <Row className='justify-content-center'>
-                <Col md='1' lg='1' xl='1'>
-                </Col>
                 <Col md='5' lg='5' xl='5'>
                     <img className={`${styles.about_section_img}`} src={"https://html.design/demo/fior/images/about-img.png"} alt="" />
                 </Col>

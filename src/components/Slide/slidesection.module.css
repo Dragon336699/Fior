@@ -7,13 +7,16 @@
     position: relative;
 }
 .slide_numberBox {
+    position: absolute;
+    left: 64px;
+    top: -32px;
     flex-direction: column;
-    padding-left: 64px
+    width: fit-content;
 }
 
 .slide_numberBox_line { 
     border-left: 2px solid rgb(188,188,192);
-    height: 300px;
+    height: 324px;
     width: fit-content;
     margin-left: 8px;
 }
@@ -21,7 +24,6 @@
 .slide_detailBox_name {
     font-size: 80px;
     color: rgb(225,96,58);
-    margin: 24px 0;
     font-weight: 600;
 }
 
@@ -61,7 +63,7 @@
 
 .slide_numberPage {
     position: absolute;
-    bottom: -44px;
+    bottom: -40px;
     right: 120px;
     width: 75px;
     height: 75px;

@@ -1,0 +1,49 @@
+.reason_section_col {
+    text-align: center;
+}
+
+.reason_section {
+    padding: 72px 0;
+    background-image: url(https://html.design/demo/fior/images/why-bg.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.reason_section_heading {
+    color: #fff;
+    font-weight: 800;
+    margin: 0 0 58px 0;
+}
+
+.reason_section_desc {
+    color: #fff;
+    margin: 0 0 58px 0;
+}
+
+.reason_section_button {
+    background-color: #fff;
+    color: rgb(225,108,78);
+    padding: 8px 52px;
+    border-radius: 24px;
+}
+
+.reason_section_button:hover {
+    background-color:rgb(217,53,60) ;
+    color: #fff;
+    border-color: #fff;
+}
+
+.reason_section_numberPage {
+    position: absolute;
+    top: -40px;
+    left: 120px;
+    background-color: rgb(224,88,58);
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+    border-radius: 50%;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+}

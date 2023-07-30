@@ -16,6 +16,10 @@ function About() {
                     </p>
                 </Col>
             </Row>
+            <span className={`${styles.about_section_numberPage}`}>
+                01
+            </span>
+            {/* <span className={`${styles.about_section_numberPage}`}>02</span> */}
         </Container>
     )
 }

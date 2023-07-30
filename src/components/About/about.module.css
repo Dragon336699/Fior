@@ -1,6 +1,7 @@
 .about_section {
     padding-top: 120px;
     padding-bottom: 120px;
+    position: relative;
 }
 
 .about_section_img {
@@ -31,4 +32,19 @@
 
 .about_section_desc {
     text-align: right;
+}
+
+.about_section_numberPage {
+    position: absolute;
+    top: -62px;
+    right: 190px;
+    background-color: rgb(224,88,58);
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+    border-radius: 50%;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
 }

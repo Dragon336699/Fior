@@ -29,9 +29,7 @@ function Slide() {
                     </div>
                 </Col>
             </Row>
-            <span className={`${styles.slide_numberPage}`}>
-                01
-            </span>
+
         </Container>
     )
 }

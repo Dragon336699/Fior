@@ -28,7 +28,7 @@
 }
 
 .reason_section_button:hover {
-    background-color:rgb(217,53,60) ;
+    background-color: transparent ;
     color: #fff;
     border-color: #fff;
 }

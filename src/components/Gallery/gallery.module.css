@@ -37,3 +37,18 @@
 .gallery_img:hover {
     transform: scale(1.2);
 }
+
+.gallery_section_numberPage {
+    position: absolute;
+    top: -40px;
+    right: 120px;
+    background-color: rgb(224,88,58);
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+    border-radius: 50%;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+}

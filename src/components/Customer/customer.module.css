@@ -1,0 +1,67 @@
+.customer_heading {
+    width: fit-content;
+    font-weight: 800;
+    position: relative;
+}
+
+.customer_heading::before {
+    content: url(https://html.design/demo/fior/images/tulip.png);
+    position: absolute;
+    left: -24px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.customer_container {
+    padding: 76px 0;
+    position: relative;
+}
+
+.customer_boxRow {
+    padding-top: 76px;
+}
+
+.customer_box {
+    position: relative;
+}
+
+.customer_img {
+    position: absolute;
+    top: 12px;
+}
+
+.customer_detail {
+    border: 1px #c6c5c5 solid;
+    padding: 25px 25px 45px 25px;
+    border-radius: 100px;
+    margin-top: 76px;
+}
+
+.customer_img:hover ~ .customer_detail {
+    background-color: rgb(217,53,60);
+}
+
+.customer_detail:hover{
+    background-color: rgb(217,53,60);
+}
+
+.customer_name {
+    padding-left: 124px;
+    font-size: 18px;
+    margin-bottom: 32px;
+}
+
+.customer_numberPage {
+    position: absolute;
+    top: 62px;
+    left: 190px;
+    background-color: rgb(224,88,58);
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+    border-radius: 50%;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+}

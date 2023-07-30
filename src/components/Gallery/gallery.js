@@ -13,7 +13,6 @@ import img8 from '../../assets/gallery/pic8.jpg'
 function Gallery() {
     return (
         <Container fluid className={`${styles.gallery_container}`}>
-
             <Row className='justify-content-center'>
                 <h2 className={`${styles.gallery_heading} `}>Our Gallery</h2>
             </Row>
@@ -59,6 +58,7 @@ function Gallery() {
                     </Col>
                 </Row>
             </Container>
+            <span className={`${styles.gallery_section_numberPage}`}>03</span>
         </Container>
     )
 }

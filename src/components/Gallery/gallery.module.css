@@ -42,7 +42,7 @@
     position: absolute;
     top: -40px;
     right: 120px;
-    background-color: rgb(224,88,58);
+    background-image: linear-gradient(0,#DC383D,#E15F3A);
     width: 75px;
     height: 75px;
     line-height: 75px;
@@ -51,4 +51,17 @@
     font-weight: bold;
     text-align: center;
     color: #fff;
+}
+
+.gallery_img_container3 {
+    height: 24%;
+}
+
+.gallery_img_container6 {
+    height: 24%;
+}
+
+.gallery_img_container8 {
+    margin-bottom: -2px;
+    height: 50%;
 }

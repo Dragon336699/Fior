@@ -1,0 +1,73 @@
+.info_section {
+    background-color: #252525;
+    color: #fff;
+    padding: 75px 0;
+}
+
+.info_section_name {
+    font-weight: 800;
+    font-size: 38px;
+    font-family: 'Baloo Chettan', cursive;
+}
+
+.info_section_des {
+    width: 85%;
+}
+
+.info_sectionLink_heading {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.info_sectionLink_list {
+    padding: 0 0 0 16px;
+}
+
+.info_sectionLink_item {
+    list-style: none;
+    margin: 4px 0;
+}
+
+.info_sectionLink_item a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.info_sectionLink_item::before {
+    content: "•";
+    font-size: 32px;
+    vertical-align: middle;
+    line-height: 20px;
+    margin-right: 12px;
+    margin-left: -12px;
+}
+
+.info_sectionInsta_containerImg {
+    margin: 0 6px
+}
+
+.info_sectionInsta_heading {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.info_sectionInsta_img {
+    margin: 6px;
+}
+
+.info_sectionContact_heading {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.info_sectionContact_list {
+    list-style: none;
+}
+
+.info_sectionContact_item {
+    margin: 16px 0;
+}
+
+.info_sectionContact_item i{
+    margin-right: 16px;
+}

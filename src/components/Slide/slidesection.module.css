@@ -8,7 +8,7 @@
 }
 .slide_numberBox {
     position: absolute;
-    left: 64px;
+    left: 48px;
     top: -32px;
     flex-direction: column;
     width: fit-content;
@@ -19,6 +19,10 @@
     height: 324px;
     width: fit-content;
     margin-left: 8px;
+}
+
+.slide_detailBox {
+    padding: 0;
 }
 
 .slide_detailBox_name {
@@ -75,3 +79,7 @@
     font-size: 24px;
     font-weight: bold;
 }
+
+.slide_wrapper{
+}
+

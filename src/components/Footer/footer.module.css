@@ -1,0 +1,22 @@
+.footer {
+    background-color: #252525;
+    color: #fff;
+    position: relative;
+}
+
+.footer::before {
+    content: url(../../assets/image/footerBg.png);
+    position: absolute;
+    top:-140px;
+    left: 0;
+}
+.footer_line {
+    text-align: center;
+    width: 100%;
+    border-top: 1px solid #fff;
+}
+
+.footer_author {
+    margin-top: 24px;
+    text-align: center;
+}

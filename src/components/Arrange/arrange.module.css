@@ -1,0 +1,34 @@
+.arrange_section {
+    background-image: url(../../assets/image/arrangeBg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 125px 0;
+    position: relative;
+}
+
+.detailBox {
+    text-align: center;
+    padding: 64px 32px;
+    border: 2px solid #b9b1ad;
+    color: #fff;
+    background-color: rgba(5, 5, 5, 0.6);
+}
+
+.detailBox_name {
+    margin-bottom: 44px;
+}
+
+.arrange_section_numberPage {
+    position: absolute;
+    bottom: -36px;
+    right: 80px;
+    background-image: linear-gradient(0,#DC383D,#E15F3A);
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+    border-radius: 50%;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+}

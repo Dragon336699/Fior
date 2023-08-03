@@ -18,7 +18,7 @@ function Gallery() {
             </Row>
             <Container className={`${styles.gallery_imgBox}`} fluid>
                 <Row className={`justify-content-center`}>
-                    <Col className={`${styles.img_box1}`} md='6' lg='6' xl='6'>
+                    <Col className={`${styles.img_box1}`} md='7' lg='7' xl='7'>
                         <Row>
                             <Col md='6' lg='6' xl='6'>
                                 <div className = {`${styles.gallery_img_container}`}>
@@ -46,14 +46,14 @@ function Gallery() {
                         </Row>
                     </Col>
                     <Col className={`${styles.img_box2}`} md='3' lg='3' xl='3'>
-                        <div className = {`mt-0 ${styles.gallery_img_container}`}>
-                            <img className={`${styles.gallery_img}`} src={img3} />
+                        <div className = {`mt-0 ${styles.gallery_img_container} ${styles.gallery_img_container3}`}>
+                            <img className={`${styles.gallery_img} h-100 `}  src={img3} />
                         </div>
-                        <div className = {`${styles.gallery_img_container}`}>
-                            <img className={`${styles.gallery_img}`} src={img6} />
+                        <div className = {`${styles.gallery_img_container} ${styles.gallery_img_container6}`}>
+                            <img className={`${styles.gallery_img} h-100`} src={img6} />
                         </div>
-                        <div className = {` ${styles.gallery_img_container}`}>
-                            <img className={`${styles.gallery_img}`} src={img8} />
+                        <div className = {` ${styles.gallery_img_container} ${styles.gallery_img_container8}`}>
+                            <img className={`${styles.gallery_img} h-100`} src={img8} />
                         </div>
                     </Col>
                 </Row>

@@ -4,7 +4,7 @@ function Header() {
     return (
         <Container className= {styles.header}>
             <Row className='justify-content-center'>
-                <Col className= {styles.header_brand} md= '1' lg = '1' xl = '1'>
+                <Col className= {styles.header_brand} md= '2' lg = '2' xl = '2'>
                     <span>Fior</span>
                 </Col>
                 <Col className={`${styles.header_nav} `} md= '6' lg = '6' xl = '6'>

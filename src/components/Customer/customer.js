@@ -11,7 +11,7 @@ function Customer() {
                 <h2 className={`${styles.customer_heading}`}>What Our Customers Say</h2>
             </Row>
             <Row className={`justify-content-center ${styles.customer_boxRow}`}>
-                <Col className={`${styles.customer_box}`} md='4' lg='4' xl='4'>
+                <Col className={`${styles.customer_box}`} md='5' lg='5' xl='5'>
                     <img src={img1} className={`${styles.customer_img}`} />
                     <div className= {`${styles.customer_detail}`}>
                         <h2 className={`${styles.customer_name}`}>NOMIL DU</h2>
@@ -21,8 +21,8 @@ function Customer() {
                         </p>
                     </div>
                 </Col>
-                <Col md='1' lg='1' xl='1'></Col>
-                <Col className={`${styles.customer_box}`} md='4' lg='4' xl='4'>
+                {/* <Col md='1' lg='1' xl='1'></Col> */}
+                <Col className={`${styles.customer_box}`} md='5' lg='5' xl='5'>
                     <img src={img2} className={`${styles.customer_img}`} />
                     <div className= {`${styles.customer_detail}`}>
                         <h2 className={`${styles.customer_name}`}>ZABIH JO</h2>

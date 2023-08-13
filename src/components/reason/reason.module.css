@@ -47,3 +47,21 @@
     text-align: center;
     color: #fff;
 }
+
+/* Reponsive  */
+
+/* Tablet & Mobile */
+
+@media (max-width: 1023px) {
+    .slide_numberBox {
+        display: none!important;
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 739px) {
+    .reason_section_numberPage {
+        left: 24px;
+    }
+}

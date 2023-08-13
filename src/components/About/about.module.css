@@ -19,7 +19,7 @@
     position: relative;
     text-align: right;
     margin-bottom: 48px;
-    font-weight: 800;
+    font-weight: bold;
 }
 
 .about_section_title::before {
@@ -47,4 +47,31 @@
     font-weight: bold;
     text-align: center;
     color: #fff;
+}
+
+
+/* Responsive */
+
+/* Mobile & Tablet */
+@media (max-width: 1023px) {
+    .about_section_numberPage {
+        right: 80px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+
+}
+
+/* Mobile */
+
+@media (max-width: 739px) {
+    .about_section {
+        padding-top: 180px;
+    }
+    .about_section_numberPage {
+        top: 40px;
+        right: 24px;
+    }
 }

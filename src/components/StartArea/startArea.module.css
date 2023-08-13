@@ -2,4 +2,25 @@
     background-image:url(/src/assets/image/startBackG.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: right;
+}
+
+/* Responsive */
+
+/* Mobile & Tablet */
+@media (max-width: 1023px) {
+    .startArea {
+        background-position: left;
+    }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+
+}
+
+/* Mobile */
+
+@media (max-width: 739px) {
+
 }

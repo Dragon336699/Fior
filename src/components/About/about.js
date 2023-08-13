@@ -1,6 +1,8 @@
 import { Col, Container, Row } from "react-bootstrap"
 import styles from './about.module.css'
+import { useLocation } from "react-router-dom"
 function About() {
+    const location = useLocation()
     return (
         <Container fluid className={`${styles.about_section}`}>
             <Row className='justify-content-center'>
@@ -16,10 +18,9 @@ function About() {
                     </p>
                 </Col>
             </Row>
-            <span className={`${styles.about_section_numberPage}`}>
+            <span hidden = {location.pathname !== '/' ? true : false} className={`${styles.about_section_numberPage}`}>
                 01
             </span>
-            {/* <span className={`${styles.about_section_numberPage}`}>02</span> */}
         </Container>
     )
 }

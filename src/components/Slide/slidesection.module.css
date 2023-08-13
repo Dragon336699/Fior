@@ -91,10 +91,40 @@
     top: 0;
     bottom: 0;
     width: 100%;
-    transition: left .8s ease-in-out;
+    transition: left .6s ease-in-out;
 }
 
 .slide_active {
     left : 0!important;
 }
 
+/* Responsive */
+
+/* Mobile & Tablet */
+@media (max-width: 1023px) {
+    .slide_numberBox {
+        display: none!important;
+    }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+
+}
+
+/* Mobile */
+
+@media (max-width: 739px) {
+    .slide_detailBox {
+        text-align: center;
+    }
+
+    .slide_detailBox {
+        overflow: unset;
+    }
+
+    .slideButton__wrap {
+        bottom: -100px;
+        left: 30%;
+    }
+}

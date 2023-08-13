@@ -37,12 +37,12 @@
     margin-top: 76px;
 }
 
-.customer_img:hover ~ .customer_detail {
-    background-color: rgb(217,53,60);
+.customer_img:hover~.customer_detail {
+    background-color: rgb(217, 53, 60);
 }
 
-.customer_detail:hover{
-    background-color: rgb(217,53,60);
+.customer_detail:hover {
+    background-color: rgb(217, 53, 60);
 }
 
 .customer_name {
@@ -55,7 +55,7 @@
     position: absolute;
     top: 62px;
     left: 190px;
-    background-image: linear-gradient(0,#DC383D,#E15F3A);
+    background-image: linear-gradient(0, #DC383D, #E15F3A);
     width: 75px;
     height: 75px;
     line-height: 75px;
@@ -64,4 +64,29 @@
     font-weight: bold;
     text-align: center;
     color: #fff;
+}
+
+/* Responsive */
+
+/* Mobile & Tablet */
+@media (max-width: 1023px) {
+    .customer_numberPage {
+        top: -64px;
+        left: 72px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {}
+
+/* Mobile */
+
+@media (max-width: 739px) {
+    .customer_numberPage {
+        left: 24px;
+    }
+
+    .customer_heading {
+        padding-left: 24px;
+    }
 }

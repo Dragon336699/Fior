@@ -32,3 +32,31 @@
     text-align: center;
     color: #fff;
 }
+
+/* Responsive */
+
+/* Mobile & Tablet */
+@media (max-width: 1023px) {
+    .arrange_section {
+        background-position: center;
+    }
+    .detailBox {
+        width: 90%;
+    }
+    .arrange_section_numberPage {
+        right: 44px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+
+}
+
+/* Mobile */
+
+@media (max-width: 739px) {
+    .arrange_section_numberPage {
+        right: 24px;
+    }
+}

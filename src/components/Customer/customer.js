@@ -8,12 +8,14 @@ function Customer() {
         <Container fluid className={`${styles.customer_container}`}>
             <span className={`${styles.customer_numberPage}`}>04</span>
             <Row className={`justify-content-center`}>
-                <h2 className={`${styles.customer_heading}`}>What Our Customers Say</h2>
+                <Col xs = '10'>
+                    <h2 className={`${styles.customer_heading}`}>What Our Customers Say</h2>
+                </Col>
             </Row>
             <Row className={`justify-content-center ${styles.customer_boxRow}`}>
                 <Col className={`${styles.customer_box}`} md='5' lg='5' xl='5'>
                     <img src={img1} className={`${styles.customer_img}`} />
-                    <div className= {`${styles.customer_detail}`}>
+                    <div className={`${styles.customer_detail}`}>
                         <h2 className={`${styles.customer_name}`}>NOMIL DU</h2>
                         <p>
                             Contrary to popular belief, Lorem Ipsum is not simply random text.
@@ -24,7 +26,7 @@ function Customer() {
                 {/* <Col md='1' lg='1' xl='1'></Col> */}
                 <Col className={`${styles.customer_box}`} md='5' lg='5' xl='5'>
                     <img src={img2} className={`${styles.customer_img}`} />
-                    <div className= {`${styles.customer_detail}`}>
+                    <div className={`${styles.customer_detail}`}>
                         <h2 className={`${styles.customer_name}`}>ZABIH JO</h2>
                         <p>
                             Contrary to popular belief, Lorem Ipsum is not simply random text.

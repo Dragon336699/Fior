@@ -4,7 +4,7 @@ function Reason() {
     return (
         <Container fluid className= {`${styles.reason_section}`}>
             <Row className={`justify-content-center`}>
-                <Col className={`${styles.reason_section_col}`} md='10' lg='10'>
+                <Col className={`${styles.reason_section_col}`} xs = '10' md='10' lg='10'>
                     <h2 className= {`${styles.reason_section_heading}`}>Why Choose Us</h2>
                     <p className= {`${styles.reason_section_desc}`}>
                         Contrary to popular belief, Lorem Ipsum is not simply random text.

@@ -1,25 +1,18 @@
 import './App.css';
-import StartArea from './components/StartArea/startArea';
-import About from './components/About/about'
-import Reason from './components/reason/reason';
-import Gallery from './components/Gallery/gallery';
-import Customer from './components/Customer/customer';
-import Arrange from './components/Arrange/arrange';
-import Contact from './components/Contact/contact';
-import Info from './components/Info/info';
-import Footer from './components/Footer/footer';
+import Home from './components/Home/home'
+import AboutRoute  from './Routes/AboutRoute/aboutRoute'
+import GalleryRoute from './Routes/GalleryRoute/galleryRoute';
+import { Routes,Route } from 'react-router-dom';
+import ContactRoute from './Routes/ContactRoute/contacRoute';
 function App() {
   return (
     <div className="App">
-      <StartArea />
-      <About />
-      <Reason />
-      <Gallery />
-      <Customer />
-      <Arrange />
-      <Contact />
-      <Info />
-      <Footer />
+      <Routes>
+        <Route path = '/' element = {<Home />} />
+        <Route path = '/about' element = {<AboutRoute />} />
+        <Route path = '/gallery' element = {<GalleryRoute />} />
+        <Route path = '/contact' element = {<ContactRoute />} />
+      </Routes>
     </div>
   );
 }

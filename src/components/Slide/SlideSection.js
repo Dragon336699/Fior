@@ -3,56 +3,57 @@ import styles from './slidesection.module.css'
 import { useEffect, useRef, useState } from 'react'
 import { logRoles } from '@testing-library/react'
 function Slide() {
+
     const [elements, setElements] = useState([])
     const [isAnimating, setIsAnimating] = useState(false)
+    const rightButton = useRef()
     useEffect(() => {
         const slideWrap = document.querySelectorAll(`.${styles.slide_wrapper}`)
+        slideWrap[slideWrap.length-1].style.transition = 'none'
         setElements(slideWrap)
     }, [])
-
     if (elements.length) {
         elements.forEach(item => {
             item.classList.remove(`${styles.slide_active}`)
         })
+        elements[0].style.transition = ''
         elements[0].classList.add(`${styles.slide_active}`)
-        elements[0].style.transition =''
+        elements[elements.length-1].style.left = '-100%'
     }
-    
+
     const handleSlideRight = () => {
         setIsAnimating(true)
         setElements(prevElements => {
             const [first, ...rest] = prevElements;
-            // rest[0].style.transition = ''
-            // first.style.transition = ''
+            rest.forEach(item => {
+                item.style.transition = 'none'
+                item.style.left = '100%'
+            })
             first.style.left = '-100%'
             setTimeout(() => {
                 first.style.transition = 'none'
                 first.style.left = '100%'
                 setIsAnimating(false)
-            }, 800)
-            // rest[1].style.transition = ''
+            }, 600)
             return [...rest, first]
         })
     }
-
     const handleSlideLeft = () => {
         setIsAnimating(true)
         setElements(prevElements => {
             const elementsCopy = [...prevElements];
+            for (let i = 1; i < elementsCopy.length; i++) {
+                elementsCopy[i].style.transition = 'none'
+                elementsCopy[i].style.left = '-100%'
+            }
             const last = elementsCopy.pop();
             elementsCopy[0].style.left = '100%'
-            elementsCopy[elementsCopy.length - 1].style.transition = 'none'
-            elementsCopy[elementsCopy.length - 1].style.left = '-100%'
             setTimeout(() => {
-                // elementsCopy[elementsCopy.length - 1].style.transition = ''
                 setIsAnimating(false)
-            }, 800)
+            }, 600)
             return [last, ...elementsCopy];
         })
-
     }
-
-
     return (
         <Container fluid className={`${styles.slide_section} `}>
             <Row className={`position-relative justify-content-center`}>
@@ -91,18 +92,28 @@ function Slide() {
                         </p>
                         <button className={`${styles.slide_button_buy} btn btn-dark`}>Buy now</button>
                     </div>
+                    <div className={`${styles.slide_wrapper}`}>
+                        <h2>Welcome 4</h2>
+                        <h1 className={`${styles.slide_detailBox_name}`}>Flowers shop</h1>
+                        <p className={`${styles.slide_detailBox_descrip} `}>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since
+                        </p>
+                        <button className={`${styles.slide_button_buy} btn btn-dark`}>Buy now</button>
+                    </div>
                     <div className={`${styles.slideButton__wrap}`}>
                         <button onClick={(e) => {
                             if (isAnimating) {
                                 e.preventDefault()
                             }
                             else {
+
                                 return handleSlideLeft()
                             }
                         }} className={`${styles.slideButton__control}`}>
                             <i className="fa-solid fa-arrow-left"></i>
                         </button>
-                        <button onClick={(e) => {
+                        <button ref={rightButton} onClick={(e) => {
                             if (isAnimating) {
                                 e.preventDefault()
                             }

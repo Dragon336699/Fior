@@ -1,7 +1,7 @@
 .info_section {
     background-color: #252525;
     color: #fff;
-    padding: 75px 0;
+    padding: 75px 32px;
 }
 
 .info_section_name {
@@ -61,6 +61,7 @@
 }
 
 .info_sectionContact_list {
+    padding-left: 0;
     list-style: none;
 }
 
@@ -70,4 +71,64 @@
 
 .info_sectionContact_item i{
     margin-right: 16px;
+}
+
+.active {
+    color: #e1603a;
+}
+
+/* Responsive */
+
+/* Mobile & Tablet */
+@media (max-width: 1023px) {
+    .info_sectionContact_item i{
+        margin-right: 12px;
+    }
+
+    .info_sectionInsta_containerImg {
+        margin-right: 12px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+
+}
+
+/* Mobile */
+
+@media (max-width: 739px) {
+    .info_sectionIntro {
+        text-align: center;
+        margin-bottom: 48px;
+    }
+    .info_section {
+        padding: 75px 12px;
+    }
+    .info_section_des {
+        width: 100%;
+    }
+
+    .info_sectionLink {
+        text-align: center;
+        margin-bottom: 48px
+    }
+    .info_sectionLink_item {
+        width: fit-content;
+        margin-left: 40%;
+    }
+    .info_sectionInsta {
+        text-align: center;
+        margin-bottom: 48px;
+    }
+    .info_sectionInsta_containerImg {
+        margin: 0 -12px;
+    }
+    .info_sectionContact {
+        text-align: center;
+    }
+    .info_sectionContact_item {
+        width: fit-content;
+        margin: 16px auto;
+    }
 }
